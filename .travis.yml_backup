@@ -1,0 +1,9 @@
+language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.0.3
+script:
+  - dotnet restore
+  - dotnet test ./UnitTest/UnitTest.csproj
+  - ./build.sh
