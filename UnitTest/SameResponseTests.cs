@@ -10,7 +10,7 @@ using UnitTestProject1;
 namespace UnitTestProject2
 {
     [TestClass]
-    public class OkTest
+    public class SameResponseTests
     {
         public static NancyTestServer TestServer;
         public static string Url;
@@ -46,13 +46,6 @@ namespace UnitTestProject2
         {
             _circuitBreakerHttpClient = null;
             _httpClient = null;
-        }
-
-        [TestMethod]
-        public async Task PreTest()
-        {
-            await Task.Delay(1);
-            Assert.IsTrue(true);
         }
 
         [TestMethod]
@@ -114,29 +107,6 @@ namespace UnitTestProject2
 
             Assert.AreEqual(httpClientException.Source, circuitBreakerException.Source);
             Assert.AreEqual(httpClientException.Message, circuitBreakerException.Message);
-        }
-
-        [TestMethod]
-        public async Task TestCancelPendingRequests()
-        {
-            Assert.Fail();
-
-            try
-            {
-                var httpClientResult = _httpClient.SendAsync(new HttpRequestMessage(HttpMethod.Get, Url));
-
-                _httpClient. CancelPendingRequests();
-
-                var http = await httpClientResult;
-            }
-            catch (Exception e)
-            {
-                var test = 123;
-            }
-
-            var test2 = 13432;
-
-            Assert.AreEqual(true, true);
         }
     }
 }

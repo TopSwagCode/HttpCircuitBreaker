@@ -38,31 +38,5 @@ namespace UnitTestProject2
         {
 
         }
-
-        [TestMethod]
-        public async Task TestGetStringAsync()
-        {
-            CircuitBreakerConfig config = new CircuitBreakerConfig();
-
-            CircuitBreaker cb = new CircuitBreaker()
-            {
-                
-            };
-
-            TimeToAllowCall ttac = new TimeToAllowCall(null)
-            {
-                ExtendTimeFunc = i => 2^i,
-                InitialExtend = 5,
-                MaxExtend = 15,
-
-            };
-
-            Assert.Fail();
-
-        }
-
-
-
-
     }
 }
