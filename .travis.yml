@@ -7,4 +7,3 @@ script:
   - dotnet restore
   - dotnet test ./UnitTest/UnitTest.csproj
   - ./build.sh
-  - ./TCB/publish.sh
