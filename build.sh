@@ -10,4 +10,4 @@ ls
 cd 
 Release
 ls
-nuget push Topswagcode.http.circuitbreaker.1.0.0.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
+nuget push /home/travis/build/kiksen1987/HttpCircuitBreaker/TCB/bin/Debug/Topswagcode.http.circuitbreaker.1.0.0.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
