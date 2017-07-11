@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PackageId>Topswagcode.http.circuitbreaker</PackageId>
+    <Authors>Joshua Ryder</Authors>
+    <Company>TopSwagCode</Company>
+    <Product>CircuitBreaker</Product>
+    <Description>Basic HTTP Client extended with a circuit breaker.</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
