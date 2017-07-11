@@ -1,7 +1,8 @@
 language: csharp
 dist: trusty
 sudo: required
-mono: none
+mono:
+  - latest
 dotnet: 1.0.3
 script:
   - dotnet restore
