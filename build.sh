@@ -3,4 +3,5 @@ dotnet restore && dotnet build && dotnet pack
 dotnet pack ./TCB -c Release -o ./artifacts --version-suffix=$revision
 ls
 cd TCB
+ls
 ./publish.sh
