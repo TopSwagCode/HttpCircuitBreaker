@@ -5,4 +5,4 @@ ls
 cd TCB
 ls
 dotnet pack --configuration Release
-mono nuget push ./bin/Release/TCB*.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
+nuget push ./bin/Release/TCB*.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
