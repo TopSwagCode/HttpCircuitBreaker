@@ -5,4 +5,9 @@ ls
 cd TCB
 ls
 dotnet pack --configuration Release
-nuget push ./bin/Release/Topswagcode.http.circuitbreaker.1.0.0.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
+cd bin
+ls
+cd 
+Release
+ls
+nuget push Topswagcode.http.circuitbreaker.1.0.0.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed
