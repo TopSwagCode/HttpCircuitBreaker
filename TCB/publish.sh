@@ -4,9 +4,9 @@ PACK_COMMAND="dotnet pack --configuration Release"
 PUSH_COMMAND_TEMPLATE="mono /usr/local/bin/nuget push ./bin/Release/TCB*.nupkg -ApiKey $NUGET_API_KEY -Source https://www.nuget.org -Verbosity detailed"
 	
 echo "(nuget API key is ${#NUGET_API_KEY} characters long)"
-echo "Branch: $BRANCH"
+echo "Branch: $TRAVIS_BRANCH"
 
-if [ "$BRANCH" == "master" ]; then
+if [ "$TRAVIS_BRANCH" == "master" ]; then
 
   if [ -z "$NUGET_API_KEY" ]; then
     echo "Missing nuget API key, unable to release."
