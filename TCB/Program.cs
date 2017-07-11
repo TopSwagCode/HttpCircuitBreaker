@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TCB
 {
     class Program
-    {
+    { 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
