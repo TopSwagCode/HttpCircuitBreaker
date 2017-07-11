@@ -9,6 +9,7 @@
     <Product>CircuitBreaker</Product>
     <Description>Basic HTTP Client extended with a circuit breaker.</Description>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>
