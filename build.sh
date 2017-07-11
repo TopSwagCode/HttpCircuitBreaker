@@ -4,4 +4,4 @@ dotnet pack ./TCB -c Release -o ./artifacts --version-suffix=$revision
 ls
 cd TCB
 ls
-./publish.sh
+dotnet pack --configuration Release
