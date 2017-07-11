@@ -4,7 +4,7 @@ dotnet pack ./TCB -c Release -o ./artifacts --version-suffix=$revision
 ls
 cd TCB
 ls
-dotnet pack --configuration Release --version-suffix $TRAVIS_JOB_ID
+dotnet pack /p:PackageVersion=1.0.7.$TRAVIS_BUILD_NUMBER --configuration Release
 cd bin
 ls
 cd 

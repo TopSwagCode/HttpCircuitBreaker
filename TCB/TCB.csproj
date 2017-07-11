@@ -8,7 +8,6 @@
     <Company>TopSwagCode</Company>
     <Product>CircuitBreaker</Product>
     <Description>Basic HTTP Client extended with a circuit breaker.</Description>
-    <VersionPrefix>1.0.6</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
