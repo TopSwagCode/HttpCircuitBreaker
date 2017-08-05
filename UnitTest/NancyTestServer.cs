@@ -1,10 +1,10 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Nancy.Owin;
 using Nancy;
+using Nancy.Owin;
 
-namespace UnitTestProject1
+namespace UnitTest
 {
     public class NancyTestServer
     {

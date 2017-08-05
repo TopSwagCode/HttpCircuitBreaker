@@ -1,13 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TCB;
-using UnitTestProject1;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject2
+namespace UnitTest
 {
     [TestClass]
     public class CircuitBreakerTimeExtenderTest

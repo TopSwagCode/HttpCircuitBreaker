@@ -23,10 +23,20 @@ namespace TCB
         {
             CircuitBreaker = new CircuitBreaker();
         }
+        
+        public CircuitBreakerHttpClient(HttpMessageHandler handler, CircuitBreaker circuitBreaker) : base(handler)
+        {
+            CircuitBreaker = circuitBreaker;
+        }
 
         public CircuitBreakerHttpClient(HttpMessageHandler handler, bool disposeHandler) : base(handler, disposeHandler)
         {
             CircuitBreaker = new CircuitBreaker();
+        }
+        
+        public CircuitBreakerHttpClient(HttpMessageHandler handler, bool disposeHandler, CircuitBreaker circuitBreaker) : base(handler, disposeHandler)
+        {
+            CircuitBreaker = circuitBreaker;
         }
 
         public new async Task<Stream> GetStreamAsync(string uri)

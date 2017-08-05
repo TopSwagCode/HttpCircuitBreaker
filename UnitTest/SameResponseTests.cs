@@ -1,13 +1,11 @@
 using System;
 using System.IO;
-using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TCB;
-using UnitTestProject1;
 
-namespace UnitTestProject2
+namespace UnitTest
 {
     [TestClass]
     public class SameResponseTests
@@ -36,7 +34,7 @@ namespace UnitTestProject2
         public void SetupSingleTest()
         {
             var config = new CircuitBreakerConfig();
-            var timerConfig = new CircuitBreakerTimerConfig();
+            var timerConfig = new CircuitBreakerTimerConfig(10, 10, i => (int) (i * 1.5));
             _circuitBreakerHttpClient = new CircuitBreakerHttpClient(new CircuitBreaker(config, timerConfig));
             _httpClient = new HttpClient();
         }

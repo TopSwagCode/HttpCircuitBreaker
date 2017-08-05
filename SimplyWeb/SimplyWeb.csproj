@@ -1,9 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
-
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -11,5 +9,10 @@
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.1" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\TCB\TCB.csproj">
+      <Project>{446739F6-B9CC-4DFE-8BFE-AEC304EC2F6C}</Project>
+      <Name>TCB</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
