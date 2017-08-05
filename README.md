@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/kiksen1987/HttpCircuitBreaker.svg?branch=master)](https://travis-ci.org/kiksen1987/HttpCircuitBreaker) 
 
+[Nuget Package](https://www.nuget.org/packages/Topswagcode.http.circuitbreaker/)
+
 This is a small project to extend the basic functionality of HttpClient with a basic Circuit Breaker.    
 To create a CircuitBreakerHttpClient instance, you need CircuitBreakerConfig and CircuitBreakerTimerConfig.
 
